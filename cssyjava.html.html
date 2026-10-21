@@ -1,0 +1,227 @@
+   <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Hello Kitty</title>
+    <style>
+        body {
+            background-color: #ffb6c1; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333333;
+            margin: 20px;
+            overflow-x: hidden;
+        }
+
+        #reloj {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 8px 15px;
+            background: white;
+            border: 2px dashed #ff69b4;
+            border-radius: 15px;
+            color: #ff1493;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .enlaces-menu a {
+            display: inline-block;
+            background-color: #ff69b4;
+            color: white;
+            padding: 10px 20px;     
+            text-decoration: none;
+            border-radius: 20px;
+            margin: 10px;
+            font-size: 18px;
+            transition: transform 0.2s, background-color 0.2s;
+            cursor: pointer;
+        }
+        .enlaces-menu a:hover {
+            background-color: #ff1493;
+            transform: scale(1.05); 
+        }
+        .contenedor-tablas {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        table {
+            background-color: white;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+        table:hover {
+            transform: translateY(-5px);
+        }
+        th {
+            background-color: #ff69b4;
+            color: white;
+            padding: 12px;
+        }
+        td {
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ffe4e1;
+        }
+        td img {
+            border-radius: 50px; 
+            object-fit: cover;
+        }
+        .tarjeta-contacto {
+            background-color: #fff0f5;
+            border: 2px dashed #ff69b4;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 400px;
+            margin: 30px auto;
+            text-align: center;
+        }
+        .corazon-flotante {
+            position: absolute;
+            color: #ff1493;
+            font-size: 20px;
+            pointer-events: none;
+            animation: flotar 2s linear forwards;
+        }
+        @keyframes flotar {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            100% { transform: translateY(-100px) scale(1.5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="reloj">🕒 Cargando hora...</div>
+
+    <header style="text-align: center; position: relative; padding-top: 40px;">
+        <button id="btnFondo" style="position: absolute; top: 20px; right: 20px; padding: 8px 15px; background: white; border: 2px solid #ff69b4; border-radius: 15px; cursor: pointer; color: #ff69b4; font-weight: bold;">✨ Cambiar Fondo</button>
+
+        <h1 style="color: #ff1493; font-size: 50px; margin-bottom: 5px;">Stefany Daniela</h1>
+        <h2 style="color: #7a0043; font-size: 28px; margin-top: 0;">Sean fanáticos de Hello Kitty</h2>
+        
+        <div style="display: flex; justify-content: center; margin: 20px 0;">
+            <img id="fotoPrincipal" src="d:\img\fany-danni.jpeg" alt="Stefany y Daniela" width="350" height="350" style="border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); cursor: pointer;">
+        </div>
+
+        <div class="enlaces-menu">
+            <a href="file:///D:/stefany/kitty.html" target="_blank">MIS GUSTOS</a>
+            <a href="file:///D:/stefany/cuestionario.html" target="_blank">Mi cuestionario 💗</a>
+            <a id="btnAlerta">¡Mensaje Secreto! 🌸</a>
+        </div>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; color: #ff1493; font-size: 32px; margin-top: 40px;">Amigos</h2>        
+        
+        <div class="contenedor-tablas">
+            <table>
+                <tr><th>AMIGO</th><th>NOMBRE</th><th>FOTO</th></tr>
+                <tr><td>1</td><td>FÁTIMA</td><td><img src="d:\img\daniela-stef.jpg" alt="Fátima" width="80" height="80"></td></tr>
+                <tr><td>2</td><td>JAQUELÍN</td><td><img src="d:\img\daniela-stef.jpg" alt="Jaquelín" width="80" height="80"></td></tr>
+                <tr><td>3</td><td>DAFNE</td><td><img src="d:\img\daniela-stef.jpg" alt="Dafne" width="80" height="80"></td></tr>
+            </table>
+
+            
+            <table>
+                <tr><th>AMIGO</th><th>NOMBRE</th><th>FOTO</th></tr>
+                <tr><td>1</td><td>Andrea</td><td><img src="d:\img\Stefany-Fany.jpeg" alt="Andrea" width="80" height="80"></td></tr>
+                <tr><td>2</td><td>Zuri</td><td><img src="d:\img\Stefany-Fany.jpeg" alt="Zuri" width="80" height="80"></td></tr>
+                <tr><td>3</td><td>Monserrat</td><td><img src="d:\img\Stefany-Fany.jpeg" alt="Monserrat" width="80" height="80"></td></tr>
+            </table>
+
+            <table>
+                <tr><th>AMIGO</th><th>NOMBRE</th><th>FOTO</th></tr>
+                <tr><td>1</td><td>Karen</td><td><img src="d:\img\fanny-dn.jpeg" alt="Karen" width="80" height="80"></td></tr>
+                <tr><td>2</td><td>Estrella</td><td><img src="d:\img\fanny-dn.jpeg" alt="Estrella" width="80" height="80"></td></tr>
+                <tr><td>3</td><td>Michelle</td><td><img src="d:\img\fanny-dn.jpeg" alt="Michelle" width="80" height="80"></td></tr>
+            </table>
+        </div>
+
+        <div style="background-color: white; padding: 20px; border-radius: 15px; margin: 20px auto; max-width: 600px; box-shadow: 0 4px 8px rgba(0,0,0,0.05);">
+            <p style="font-size: 20px; color: #db148c;"><b>MISIÓN:</b> Ser una maestra muy dedicada, tener mi propia casa y comprarme mis cosas yo sola.</p>
+            <hr style="border: 0; border-top: 1px dashed #ff69b4;">
+            <p style="font-size: 20px; color: #db148c;"><b>VISIÓN:</b> Dentro de 5 años me veo siendo una profesional y dando a mis papás todo lo que me han dado.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div style="text-align: center; margin: 20px 0; line-height: 1.8;">
+            <b>Mejores amigas:</b> ZURI Y MONSE.<br>
+            <i>¡Gracias por visitar mi sitio web!</i><br>
+            <u>Dios te bendiga ,gracias por tomarte el tiempo de visitar mi sitio web.</u><br>
+        </div>
+
+        <section class="tarjeta-contacto">
+            <p id="nombre" style="color: #ff1493; font-size: 18px;">Stefany Daniela Martínez Martínez</p>
+            <p id="twiter" style="color: #555;">🕊️ @steff_dann0</p>
+            <p id="correo" style="color: #555;">✉️ @stefanydanis90</p>
+        </section>
+    </footer>
+
+    <script>
+        function actualizarReloj() {
+            const ahora = new Date();
+            let horas = ahora.getHours();
+            let minutos = ahora.getMinutes();
+            let segundos = ahora.getSeconds();
+            horas = horas < 10 ? '0' + horas : horas;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+            
+            document.getElementById('reloj').innerHTML = `🕒 ${horas}:${minutos}:${segundos}`;
+        }
+        actualizarReloj();
+        setInterval(actualizarReloj, 1000);
+        window.onload = function() {
+            setTimeout(() => {
+                let nombreUsuario = prompt("¡Hola! ¿Cómo te llamas?", "Invitado");
+                if (nombreUsuario) {
+                    alert("¡Bienvenida " + nombreUsuario + " al sitio de Stefany donde puedes saber sobre mi e inspirarte a luchar por tus sueños,disfruta de la visita chaooo besitossssss  ! 🎀");
+                }
+            }, 500);
+        };
+        const botonFondo = document.getElementById('btnFondo');
+        const fondos = ['#ffb6c1', '#ffc0cb', '#e6e6fa', '#fbc5d8', '#fff0f5'];
+        let indiceFondo = 0;
+
+        botonFondo.addEventListener('click', function() {
+            indiceFondo = (indiceFondo + 1) % fondos.length;
+            document.body.style.backgroundColor = fondos[indiceFondo];
+        });
+
+        document.getElementById('btnAlerta').addEventListener('click', function() {
+            alert("✨ Recuerda la misión de Stefany: ¡Ser una maestra dedicada y cumplir todos sus sueños! 📑🏡");
+        });
+
+        const foto = document.getElementById('fotoPrincipal');
+        foto.addEventListener('click', function() {
+            foto.style.transform = 'scale(0.9)';
+            setTimeout(() => {
+                foto.style.transform = 'scale(1)';
+            }, 150);
+        });
+        document.body.addEventListener('click', function(e) {
+            if(e.target === botonFondo) return;
+
+            const corazon = document.createElement('span');
+            corazon.classList.add('corazon-flotante');
+            corazon.innerHTML = '💗';
+            corazon.style.left = e.pageX + 'px';
+            corazon.style.top = e.pageY + 'px';
+            
+            document.body.appendChild(corazon);
+            
+            setTimeout(() => {
+                corazon.remove();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
